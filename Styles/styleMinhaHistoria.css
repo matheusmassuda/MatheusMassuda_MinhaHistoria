@@ -1,0 +1,895 @@
+        html {
+        scroll-behavior: smooth;
+        }
+        
+        body  {
+        font-family: "Karla", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+        padding-top: 75px;
+        overflow-wrap: break-word;
+        color: #292929;
+        line-height: 1.8;
+        }
+
+        .w3-leftbar {
+          color: aqua;
+        }
+
+        nav {
+        font-family: "Kanit", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        }
+
+        section {
+        scroll-margin-top: 80px; /* ajuste conforme a altura real do menu fixo */
+        }
+
+        #projetos,
+        #historia,
+        #tecnologias-section,
+        #contato {
+        scroll-margin-top: 80px;
+        }
+        
+        .menu-fixo {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            z-index: 999;
+            display: flex;
+            align-items: center;
+            background-color: white;
+            transition: padding 0.4s ease, gap 0.4s ease;
+        }
+
+        .menu-desktop-bar {
+            text-decoration: none;
+            transition: transform 0.3s ease, color 0.3s ease;
+            color: #333
+        }
+
+        .menu-desktop-bar:hover {
+            color: #a0a0a0;
+        }
+
+
+        .logo {
+            max-height: 40px;
+        }
+
+
+        .padding-adjustment {
+            margin-top: 5%;
+        }
+
+        .titles-font-style {
+            font-family: "Karla", sans-serif;
+            font-size: 1.875em;
+            font-weight: 600;
+            letter-spacing: 0.48em;
+        }
+
+        .subtitles-font-style {
+            margin-top: 1.875em;
+            font-family: "Kanit", sans-serif;
+            font-size: 1.975em;
+            font-weight: 400;
+        }
+        
+        .links {
+            text-decoration: none;
+        }
+
+        .banner-divider {
+            height: 1px;              
+            background-color: #ccc;   
+            margin: 12% auto 2% auto;   
+        }
+
+
+        
+
+
+        
+        /*--------------------------------------------------------*/
+
+        @media only screen and (min-width: 0px) and (max-width: 379px) {
+            #main, .main {
+                margin: 2% 1% 2% 2%;
+                padding: 3px;
+            }
+                
+            .w3-bar {
+                background-color: rgb(255, 255, 255);
+            }
+            
+
+        }
+        
+        @media only screen and (min-width: 380px) and (max-width: 768px) {
+            #main, .main {
+                margin: 2% 1% 2% 2%;
+                padding: 3px;
+            }
+                
+            .w3-bar {
+                background-color: rgb(255, 255, 255);
+            }
+                
+            .w3-display-container {
+                overflow: hidden;
+                display: flex;
+                justify-content: flex-start;
+            }
+                    
+            .img-zoom-responsive {
+                transform-origin: left center;
+                transition: transform 0.3s ease-in-out;
+            }
+
+            .footer-limited {
+                max-width: 62vw;
+                text-align: left;
+                margin-left: 2.6%;
+            }
+
+            .footer-limited h3
+            .footer-limited ul li,
+            .footer-limited ul li a {
+                font-size: 13px;
+            }
+
+            .projects-grid {
+              grid-template-columns: 1fr; /* Só 1 coluna em telas pequenas */
+            }
+
+            .content-width {
+                width: 94%;
+                margin: auto;
+            }
+
+            
+                        
+        }
+
+        /*--------------------------------------------------------*/
+        
+        @media only screen and (min-width: 769px) and (max-width: 1254px) {
+            #main, .main {
+                margin: 0% 1.5% 0% 1.5%;
+                padding: 10px;
+            }
+
+           
+
+           
+                
+            .w3-bar {
+                background-color: rgb(255, 255, 255);
+            }
+
+            
+                
+            .w3-display-container {
+                overflow: hidden;
+                display: flex;
+                justify-content: center;
+            }
+
+            .content-width {
+                width: 580px;
+                margin: auto;
+            }
+                    
+            
+
+            
+                        
+        }
+
+        /*--------------------------------------------------------*/
+        
+        @media only screen and (min-width: 1255px) and (max-width: 1920px) {
+            #main, .main {
+                margin: 2% 0% 8% 2%;
+                padding: 0px;
+            }
+
+            .banner-divider {
+                width: 62%;
+                margin: 6% auto 0% auto;  
+            }
+                
+            .w3-bar {
+                background-color: rgb(255, 255, 255);
+                padding: 0;
+            }
+
+            .menu-fixo {
+              width: 1100px;
+              margin: auto;
+            }
+            
+            
+                    
+            .img-zoom-responsive {
+                transform: scale(1);
+                transform-origin: right center;
+                transition: transform 0.3s ease-in-out;
+            }
+
+            
+            .footer-limited {
+                margin-left: 19.95%;
+            }
+
+            .projects-grid {
+              display: grid;
+              grid-template-columns: repeat(2, 1fr);
+              gap: 1rem;
+            }
+
+            .content-width {
+                width: 600px;
+                margin: auto;
+            }
+            
+                        
+        }
+
+
+        /*--------------------------------------------------------*/
+        
+        @media only screen and (min-width: 1921px) {
+            #main, .main {
+                margin: 2% 0% 8% 2%;
+                padding: 0px;
+            }
+
+            .banner-divider {
+                width: 62%;
+                margin: 6% auto 0% auto;  
+            }
+
+            .menu-fixo {
+              width: 55%;
+              margin: auto;
+            }
+                
+            .w3-bar {
+                background-color: rgb(255, 255, 255);
+                padding: 0;
+            }
+                    
+            .img-zoom-responsive {
+                transform: scale(1);
+                transform-origin: right center;
+                transition: transform 0.3s ease-in-out;
+            }
+
+            
+            .footer-limited {
+                margin-left: 19.95%;
+            }
+
+            .projects-grid {
+              display: grid;
+              grid-template-columns: repeat(2, 1fr);
+              gap: 1rem;
+            }
+
+            .content-width {
+                width: 840px;
+                margin: auto;
+            }
+            
+                        
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+ 
+
+/*IMAGE (HOVER) - TRANSITION*/
+.margin-banner-btn {
+    margin: clamp(18px, 2vw, 40px); /* 8px em telas pequenas, até 24px em grandes */
+}
+
+.image-hover-container {
+    position: relative;
+    width: 100%;
+    height: 380px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+    box-sizing: border-box;
+}
+
+.image-hover-container .hover-img {
+    position: absolute;
+    
+    width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    transition: opacity 1s ease-in-out;
+}
+
+.image-hover-container .primary {
+    z-index: 1;
+    opacity: 1;
+}
+
+.image-hover-container .secondary {
+    z-index: 2;
+    opacity: 0;
+}
+
+/* Quando o mouse passa sobre o container, alterna as opacidades */
+.image-hover-container:hover .primary {
+    opacity: 0;
+}
+
+.image-hover-container:hover .secondary {
+    opacity: 1;
+}
+
+
+
+
+/*TEXT (SHOW PROJECT) - TRANSITION*/
+
+.project-button {
+  position: relative;
+  display: block;
+  width: 50%;
+  height: 2.8em; /* aumentei para dar mais espaço vertical */
+  overflow: hidden;
+  padding: 0 16px;
+  font-size: 1rem;
+  line-height: 3em; /* igual à altura para alinhar verticalmente */
+  color: rgb(0, 0, 0);
+  box-sizing: border-box;
+}
+
+.project-button span {
+  display: block;
+  width: 100%;
+  position: absolute;
+  text-align: left;
+  transition: transform 0.8s ease, opacity 0.5s ease;
+}
+
+.project-button .text-default {
+  transform: translateY(0%);
+  opacity: 1;
+  z-index: 2;
+}
+
+.project-button .text-hover {
+  transform: translateY(100%);
+  opacity: 0;
+  z-index: 1;
+}
+
+.project-button:hover .text-default {
+  transform: translateY(-100%);
+  opacity: 0;
+}
+
+.project-button:hover .text-hover {
+  transform: translateY(0%);
+  opacity: 1;
+}
+
+
+
+
+/*------------ projetos toggle*/
+
+.project-container {
+
+}
+
+.expand-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: #444;
+  
+  transition: transform 0.3s ease;
+}
+
+.expand-toggle svg {
+  width: 1em;
+  height: 1em;
+  transition: transform 0.3s ease;
+}
+
+.expand-toggle[aria-expanded="true"] svg {
+  transform: rotate(180deg);
+}
+
+
+article .project-details {
+  max-height: 0;
+  overflow: hidden;
+  margin: 1rem 1rem;
+  opacity: 0;
+  transition: max-height 1s ease, opacity 1s ease;
+}
+
+.project-details-container {
+  margin-left: 6%;
+  width: 86%;
+  margin-bottom: 60px;
+  padding: 2rem;
+  border: 1px solid #e6e6e6;
+}
+
+
+.project-details.open {
+  opacity: 1;
+}
+
+.project-video {
+  width: 100%;
+  max-height: 480px;
+  margin-top: 1rem;
+  height: auto;
+
+  border-radius: 3px;
+}
+
+.project-details.open {
+  max-height: 7000px; /* ajuste conforme o conteúdo */
+  opacity: 1;
+}
+
+/*              - -            - - -           -                             */
+.project-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.3rem 0 0.6rem;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.project-header-row .text-descriptive {
+  font-weight: 500;
+  color: #222;
+}
+
+.expand-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+  color: #444;
+  transition: transform 0.3s ease;
+}
+
+.icon-plus:hover,
+.icon-minus:hover {
+    font-size: 1.15rem;
+}
+
+.expand-toggle .icon-plus,
+.expand-toggle .icon-minus {
+  display: inline-block;
+  transition: transform 0.8s ease;
+  transform-origin: center center;
+}
+
+
+.icon-plus {
+  transform-origin: center center;
+  transition: transform 0.3s ease;
+  display: block;
+}
+
+
+.expand-toggle:hover .icon-plus {
+  transform-box: fill-box;
+  transform-origin: center;
+  transition: transform 0.9s ease;
+  transform: rotate(180deg);
+}
+
+.expand-toggle[aria-expanded="true"] {
+  transform: rotate(-90deg);
+}
+
+.expand-toggle .icon-plus,
+.expand-toggle .icon-minus {
+  transition: transform 0.9s ease;
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+}
+
+.close-button-container {
+  display: flex;
+  cursor: pointer;
+  justify-content: flex-end;
+  transition: opacity 0.3s ease;
+}
+
+.expand-toggle svg:hover {
+  transform: scale(1.03);
+}
+
+
+
+.expand-toggle[aria-expanded="false"] .icon-minus {
+  display: none;
+}
+
+.expand-toggle[aria-expanded="true"] .icon-plus {
+  display: none;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* DUAS colunas no desktop */
+  gap: 1.5rem; /* Espaçamento entre os artigos */
+}
+
+.projects-grid article {
+  max-width: 600px;
+  width: 100%;
+}
+
+
+
+/*----------- TENTARIVA CORREÇÃO ----------------*/
+
+
+/*----------- SLIDER PROJECT-WOW ----------------*/
+.project-wow-slider {
+  position: relative;
+  width: 100%;
+  max-height: 360px;
+  overflow: hidden;
+  margin: 2rem 0;
+  border-radius: 4px;
+}
+
+.slider-wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slider-track img {
+  width: 100%;
+  flex-shrink: 0;
+  object-fit: cover;
+  object-position: top;
+  max-height: 360px;
+}
+
+.slider-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  
+  background: rgba(255, 255, 255, 0.65);
+  
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  z-index: 1;
+  padding: 0.3rem 0.7rem;
+  border-radius: 50%;
+  transition: background 0.3s ease;
+}
+
+.slider-button:hover {
+  font-size: 1.05rem;
+  background: rgba(255, 255, 255, 0.92);
+}
+
+.slider-button.prev {
+  left: 10px;
+}
+
+.slider-button.next {
+  right: 10px;
+}
+
+
+/*Ajuste logo katana */
+
+.img-logo-katana {
+ max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  padding: 1rem; /* opcional: evita encostar nas bordas */
+  box-sizing: border-box; 
+}
+
+
+
+
+
+
+
+
+
+
+.margin-top-banner {
+    margin-top: 1%;
+}    
+                            
+.project-quote {
+    font-style: italic;
+}             
+
+.social-icons {
+ display: flex;
+ justify-content: flex-end;
+ gap: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+/*-------------------------------------------------*/
+footer div .w3-container {
+    display: flex;
+    justify-content: space-between; /* Espaço entre newsletter e ícones */
+    flex-wrap: wrap; /* Quebra em telas menores */
+    gap: 1.5rem; /* Espaço entre colunas quando quebrar */
+    padding-left: 2rem 1rem;
+}
+
+
+#newsLetterForm {
+    display: inline-flex;
+    font-size: 0.85EM;
+    font-weight: 600;
+    gap: 2px;
+}
+
+footer.w3-container > div.w3-half {
+  flex: 1 1 300px; /* Deixa o form responsivo, mínimo 300px */
+  max-width: 100%;
+}
+
+#emailInput {
+    display: inline-block;
+    font-size: 0.95em;
+    width: 60%;
+}
+
+
+div.credits {
+    vertical-align: inherit;
+}
+
+    .newsletter-row {
+        display: flex;
+        gap: 8px;
+        flex-wrap: nowrap;
+    }
+
+    .newsletter-row input {
+        flex: 1;
+        min-width: 0;
+    }
+
+    .newsletter-row button {
+        white-space: nowrap;
+    }
+
+
+
+
+    
+/* ------------------------------------------------------- */
+/* Força o layout em linha horizontal para telas maiores */
+  @media (min-width: 601px) {
+    .newsletter-social-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: nowrap;
+    }
+
+    .newsletter-form,
+    .social-icons-wrapper {
+      width: 48%;
+    }
+
+    .social-icons-wrapper {
+      text-align: right;
+    }
+  }
+
+  /* Estilo específico para dispositivos móveis */
+  @media (max-width: 600px) {
+    .newsletter-form,
+    .social-icons-wrapper {
+      width: 100%;
+    }
+
+    .social-icons-wrapper {
+      text-align: center;
+      margin-top: 16px;
+    }
+  }
+
+  /* Melhora espaçamento entre ícones */
+  .social-icons a {
+    margin: 0 8px;
+    display: inline-block;
+    color: inherit;
+  }
+
+
+.social-icon svg {
+  display: block;
+  width: 28px;
+  height: 28px;
+  transition: transform 0.18s ease, color 0.18s ease;
+  color: #333;
+}
+
+.social-icon:hover svg,
+.social-icon:focus svg {
+    color: #a7a7a7; /* Ou cor da marca que quiser */
+    cursor: pointer;
+}
+
+.text-style-credits a {
+    text-decoration: none;
+    display: block;
+    color: #a7a7a7;
+}
+
+.credits {
+    padding: 16px;
+}
+
+footer a {
+    text-decoration: none;
+    color: hsl(0, 0%, 20%);
+}
+
+.footer-limited {
+    max-width: 62vw;
+    text-align: left;
+}
+
+.footer-limited li {
+    border-bottom: none;
+}
+
+ /*-------------------- TECNOLOGIAS ------------------------------------*/
+
+.tech-carousel {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    max-width: 1120px;
+    margin: auto;
+}
+
+.icon-hover-container {
+    width: 130px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.icon-hover-container svg {
+  max-width: 90%;
+  max-height: 90%;
+}
+
+
+.tech-icon {
+  width: 64px;
+  height: 64px;
+  display: inline-block;
+  filter: grayscale(0%);
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+.tech-icon:hover {
+  filter: grayscale(100%);
+  transform: scale(1.12);
+}
+
+/*------------------------------------- icones */
+.project-button-icon {
+  position: relative;
+  display: block;
+  width: max-content;
+  height: 2.8em; /* aumentei para dar mais espaço vertical */
+  padding: 0 45px;
+  font-size: 1rem;
+  line-height: 2.8em; /* igual à altura para alinhar verticalmente */
+  color: rgb(0, 0, 0);
+  box-sizing: border-box;
+  overflow: visible;
+}
+
+.project-button-icon span {
+  display: block;
+  width: 16px;
+  height: 100%;
+  position: absolute;
+  font-size: 14px;
+  top: 0;
+  left: 0;
+  text-align: left;
+}
+
+.project-button-icon .text-default {
+    transform: translateX(0%);
+    opacity: 1;
+    z-index: 2;
+    transition: transform 0.8s ease, opacity 0.5s ease;
+}
+
+.project-button-icon:hover .text-default {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+.project-button-icon .text-hover {
+  transform: translateX(100%);
+  opacity: 0;
+  z-index: 1;
+  transition: transform 0.8s ease-out 0.3s, opacity 0.4s ease-out 0.2s;
+}
+
+
+.project-button-icon:hover .text-hover {
+  transform: translateX(0%);
+  opacity: 1;
+}
+
