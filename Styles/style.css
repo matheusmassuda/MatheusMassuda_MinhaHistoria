@@ -106,6 +106,27 @@
             .w3-bar {
                 background-color: rgb(255, 255, 255);
             }
+
+            .footer-limited {
+                max-width: 62vw;
+                text-align: left;
+                margin-left: 3%;
+            }
+
+            .footer-limited h1,
+            .footer-limited p {
+
+                font-size: 11.8px !important;
+            }
+            .footer-limited h3,
+            .footer-limited ul li,
+            .footer-limited ul li a {
+                font-size: 11px !important;
+            }
+
+            .footer-limited .w3-col {
+                padding-left: 20px;
+            }
             
 
         }
@@ -184,6 +205,12 @@
                 width: 580px;
                 margin: auto;
             }
+
+            .footer-limited {
+                max-width: 62vw;
+                text-align: left;
+                margin-left: 1.5%;
+            }
                     
             
 
@@ -212,6 +239,11 @@
             .menu-fixo {
               width: 1100px;
               margin: auto;
+            }
+
+            .w3-container-newsletter {
+                width: 62%;
+                margin: auto;
             }
             
             
@@ -258,6 +290,11 @@
             .menu-fixo {
               width: 55%;
               margin: auto;
+            }
+
+            .w3-container-newsletter {
+                width: 62%;
+                margin: auto;
             }
                 
             .w3-bar {
